@@ -1,4 +1,4 @@
-## sitting-cafe
+# Sitting Cafe
 
 ![structure](https://user-images.githubusercontent.com/43533905/45959540-0f861a00-c055-11e8-8b38-e283996263eb.png)
 
