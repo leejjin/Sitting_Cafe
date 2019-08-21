@@ -1,0 +1,14 @@
+<?php
+      $con = mysqli_connect("localhost","threepig","sungshin95",$db_name);
+      $result=mysqli_query($con);
+      $response=array();
+
+      while($row = mysqli_fetch_array($result)){
+		
+		array_push($response, array("cafeName"->$row[0]));
+	}
+       echo json_encode(array("response"->$response));
+       mysql_close($con);
+?>
+
+	
