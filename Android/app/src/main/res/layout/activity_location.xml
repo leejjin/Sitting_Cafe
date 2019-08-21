@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e0e0e0">
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:textColor="#000000"
+        android:text="&lt;앉는 카페&gt;는 가고자 했던 카페를 방문하였을 때,"
+        android:textSize="13sp"/>
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="#000000"
+        android:text="좌석이 없어 발길을 돌려야 했던 불편함을 없애고자 개발되었습니다." />
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="#000000"
+        android:text="어플을 통해서 방문하고자 하는 카페의 상태를" />
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="#000000"
+        android:text="실시간으로 확인해 보세요." />
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+      <ImageView
+          android:layout_marginLeft="40dp"
+          android:layout_gravity="center"
+          android:src="@drawable/location"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:text="방문하고자 하는 카페의 근처 학교명을 입력해주세요."/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spin_school"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"> </Spinner>
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/edit_school"
+        android:layout_gravity="center"
+        android:background="#ffffff"
+        android:layout_marginTop="40dp"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:hint="   직접 입력 ( 띄어쓰기 없이 입력해주세요. ) ^^"/>
+    <Button
+        android:id="@+id/btn_location"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:text="검색"
+        android:layout_width="100dp"
+        android:layout_height="50dp" />
+</LinearLayout>

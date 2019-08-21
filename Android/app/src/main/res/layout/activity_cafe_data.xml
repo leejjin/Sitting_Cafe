@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView_school_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="27sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#e0e0e0"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:text="카페 이름"/>
+
+        <View
+            android:background="#ffffff"
+            android:layout_marginLeft="30dp"
+            android:layout_width="3px"
+            android:layout_height="match_parent">
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:text="혼잡도"/>
+
+        <View
+            android:background="#ffffff"
+            android:layout_marginLeft="15dp"
+            android:layout_width="3px"
+            android:layout_height="match_parent">
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:text="실시간 인원"/>
+        <View
+            android:background="#ffffff"
+            android:layout_marginLeft="15dp"
+            android:layout_width="3px"
+            android:layout_height="match_parent">
+        </View>
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+        android:layout_marginTop="12dp"
+        android:textColor="#000000"
+        android:text="테이블 수"/>
+        <View
+            android:background="#ffffff"
+            android:layout_marginLeft="10dp"
+            android:layout_width="3px"
+            android:layout_height="match_parent">
+        </View>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="12dp"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:text="의자 수"/>
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:id="@+id/listView_main_list" />
+
+    <Button
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/button_refresh"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="새로고침" />
+    <Button
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/button_back"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="첫 화면으로" />
+
+</LinearLayout>
