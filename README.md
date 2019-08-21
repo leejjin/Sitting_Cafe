@@ -1,9 +1,9 @@
-## sitting-cafe
+# Sitting Cafe
 
 ![structure](https://user-images.githubusercontent.com/43533905/45959540-0f861a00-c055-11e8-8b38-e283996263eb.png)
 
 
-### Sitting cafe('¾É´Â Ä«Æä') shows the number of people in CAFE in real time. 
+### Sitting cafe('ì•‰ëŠ”ì¹´íŽ˜') shows the number of people in CAFE in real time. 
 
 I used arduino D1 R1 board that the ESP8266 (wifi module) mounted in it to make connection between arduino and the server by PHP.
 (and ACTUALLY I recommend the **D1 R1** board who use http requests by WIFI than only using ESP8266 module because of its instability..)
